@@ -39,17 +39,17 @@ def setControls(throttle, pitch, roll, yaw, autolevel):
     
 # Set idle positions
 def idle():
-  setControls(0,0,0,0,False)
+  setControls(0,0,0,0,True)
 
 # Arm
 def arm():
-  setControls(0,0,0,100,False)
+  setControls(0,0,0,100,True)
   time.sleep(3)
   idle()
 
 # Disarm
 def disarm():
-  setControls(0,0,0,-100,False)
+  setControls(0,0,0,-100,True) 
   time.sleep(3)
   idle()
 
